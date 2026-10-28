@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cosmicra-exptrack_jd038"
+version = "0.1.0"
+description = "抽取数值做分布分析，用中位数绝对偏差识别实验管理与追踪工程师·推理服务的限流与排队上的离群点"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "cosmicra" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://cosmicra.github.io"
+Repository = "https://github.com/cosmicra/exptrack_jd038"
+Issues = "https://github.com/cosmicra/exptrack_jd038/issues"
+
+[project.scripts]
+exptrack_jd038 = "exptrack_jd038:main"
+
+[tool.setuptools]
+py-modules = ["exptrack_jd038"]
